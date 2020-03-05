@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1583436248104
+Build-Jdk: 1.8.0_242
+Built-By: vishodu
+Bundle-ManifestVersion: 2
+Bundle-Name: OSGI_Test
+Bundle-SymbolicName: org.example.OSGI_Test
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: Service;uses:=bean;version="1.0.0",Service.Implementatio
+ n;uses:="Service,bean";version="1.0.0",bean;version="1.0.0"
+Import-Package: Service,bean
+Provide-Capability: osgi.service;objectClass:List<String>="Service.Stude
+ ntClassService"
+Require-Capability: osgi.service;filter:="(objectClass=Service.StudentCl
+ assService)";effective:=active,osgi.extender;filter:="(&(osgi.extender=
+ osgi.component)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(
+ &(osgi.ee=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/AppComponent.xml,OSGI-INF/Service.Implementa
+ tion.StudentServiceImpl.xml
+Tool: Bnd-4.1.0.201810181252

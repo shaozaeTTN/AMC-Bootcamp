@@ -1,0 +1,5 @@
+AppComponent.class
+Service/Implementation/StudentServiceImpl.class
+Service/Implementation/ClassConfigurationService.class
+bean/Student.class
+Service/StudentClassService.class
