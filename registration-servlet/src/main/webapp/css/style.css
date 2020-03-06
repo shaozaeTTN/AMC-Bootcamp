@@ -1,0 +1,25 @@
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.text-teal {
+  color: rgb(38, 143, 143);
+}
+.bg-teal {
+  background-color: rgb(70, 199, 199);
+}
+.bg-grey {
+  background-color: #bebebe;
+}
+.card {
+  border-radius: 5px;
+}
+nav a {
+  font-size: 12px;
+}
+a:hover {
+  text-decoration: none;
+}
+label {
+  margin-bottom: 0px;
+  font-size: 15px;
+}
