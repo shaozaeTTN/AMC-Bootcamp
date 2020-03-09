@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.ttn.bootcamp.configurations.MarketBlogConfig">
+  <OCD id="com.ttn.bootcamp.configurations.MarketBlogConfig" name="Market Blog Configurations" description="">
+    <AD id="bundleCategory" type="String" name="Blog Category" default="Marketing"/>
+    <AD id="rank" type="Integer" name="Blog Rank" default="2"/>
+  </OCD>
+  <Designate pid="com.ttn.bootcamp.Services.Implementation.MarketBlog">
+    <Object ocdref="com.ttn.bootcamp.configurations.MarketBlogConfig"/>
+  </Designate>
+</metatype:MetaData>

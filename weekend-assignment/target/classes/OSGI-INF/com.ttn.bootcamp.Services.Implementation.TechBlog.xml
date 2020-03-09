@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.ttn.bootcamp.Services.Implementation.TechBlog" activate="activate">
+  <implementation class="com.ttn.bootcamp.Services.Implementation.TechBlog"/>
+  <service>
+    <provide interface="com.ttn.bootcamp.Services.BlogApi"/>
+  </service>
+  <property name="rank" type="Integer" value="1"/>
+  <property name="bundleCategory" type="String" value="Technology"/>
+  <property name="version" type="String" value="1.0"/>
+</scr:component>

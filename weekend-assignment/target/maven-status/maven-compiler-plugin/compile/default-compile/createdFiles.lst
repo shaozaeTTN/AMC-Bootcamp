@@ -1,0 +1,8 @@
+com/ttn/bootcamp/Services/Implementation/MarketBlog.class
+com/ttn/bootcamp/Services/Implementation/TechBlog.class
+com/ttn/bootcamp/configurations/TechBlogConfig.class
+com/ttn/bootcamp/Services/Implementation/BlogsCollectorImpl.class
+com/ttn/bootcamp/Services/BlogsCollector.class
+com/ttn/bootcamp/configurations/MarketBlogConfig.class
+com/ttn/bootcamp/ConsumerApp.class
+com/ttn/bootcamp/Services/BlogApi.class
