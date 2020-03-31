@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${properties.jcr:title}</title>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<h1>Color Property</h1>
+</body>
+</html>
+<script>
+    fetch("http://localhost:8080/content/my-htl/child.color.json").then(res=>res.json()).then(res=>{
+    document.querySelector('body').style.background=[res];
+
+    });
+
+
+
+</script>

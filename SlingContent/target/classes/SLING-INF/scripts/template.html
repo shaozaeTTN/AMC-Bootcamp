@@ -1,0 +1,7 @@
+<template data-sly-template.One="${@ list,bgcolor}">
+
+  <select data-sly-list="${list}" style="background-color: ${bgcolor @ context='styleToken'};">
+    <option value="${item.text}">${item.value}</option>
+  </select>
+
+</template>

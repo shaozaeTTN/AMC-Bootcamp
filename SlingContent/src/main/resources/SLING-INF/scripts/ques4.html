@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>${properties.jcr:title}</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<center>
+<sly data-sly-use.ques2="Ques2"></sly>
+<sly data-sly-use.template="template.html"></sly>
+<div data-sly-call='${template.one @ list=ques2.resourceChild ,bgcolor="blue"}'></div><br><br><br><br>
+<div data-sly-call='${template.one @ list=ques2.resourceChild ,bgcolor="pink"}'></div>
+</center>
+</body>
+</html>
