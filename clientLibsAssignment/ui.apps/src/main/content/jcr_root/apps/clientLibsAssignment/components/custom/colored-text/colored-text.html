@@ -1,0 +1,5 @@
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"
+     data-sly-call="${clientlib.css @ categories='clientLibsAssignment.component.coloredText'}"/>
+<div class="${properties.color @ context='styleToken'}">${properties.text @ context='html'}</div>
+<p data-sly-test="${!properties.text}">Colored Text Component</p>
+
