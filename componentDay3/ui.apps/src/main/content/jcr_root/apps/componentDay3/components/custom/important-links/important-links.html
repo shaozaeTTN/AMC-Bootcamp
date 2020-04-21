@@ -1,0 +1,9 @@
+<div data-sly-use.impLinks="com.ttn.training.core.models.URLHandler">
+    <h4>${resource.title}</h4>
+    <b>Important Links: </b>
+    <ol data-sly-list.child="${impLinks.list}">
+        <li>
+            <a href="${child.link}" target="${child.linkTarget}">${child.linkTitle}</a>
+        </li>
+    </ol>
+</div>

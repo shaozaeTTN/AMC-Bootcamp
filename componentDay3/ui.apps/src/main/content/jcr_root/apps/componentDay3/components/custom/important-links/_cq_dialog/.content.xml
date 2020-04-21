@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items
+            jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items
+                    jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        jcr:title="Properties"
+                        margin="true">
+                        <items
+                            jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                                <items
+                                    jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Title"
+                                                fieldDescription="Title of the Component"
+                                                name="./title"/>
+                                            <links
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    name="./links"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items
+                                                        jcr:primaryType="nt:unstructured">
+                                                        <linkTitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            name="linkTitle"
+                                                            fieldLabel="Title of Link"/>
+                                                        <link
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            name="link"
+                                                            fieldLabel="Link"
+                                                            fieldDescription="Please either select path from browser or provide a complete link (e.g https://www.google.com/)"
+                                                            rootPath="/content"/>
+                                                        <openInNewTab
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                            name="linkTarget"
+                                                            fieldLabel="Open Link in new tab?">
+                                                            <items
+                                                                jcr:primaryType="nt:unstructured">
+                                                                <sameTab
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="Yes"
+                                                                    value="_blank" />
+                                                                <newTab
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    text="No"
+                                                                    value="" />
+                                                            </items>
+                                                        </openInNewTab>
+                                                    </items>
+                                                </field>
+                                            </links>
+
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

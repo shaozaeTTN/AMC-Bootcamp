@@ -1,27 +1,41 @@
 # AMC Bootcamp Assignments
-## Components Day 2
+## Components Day 3
 ### Assignment
 
 
-##### Question
+##### Questions
 
-1. For each of component you will create, make sure you are having actions and listeners accordingly.
+	
+1. Explore all properties of resource merger .
 
-2. Using /apps/core/wcm/components/image , create your component using overriding and with component group of your name.
-    * Add an extra tab in the extended component and name it “Size”.
-    * Hide “Metadata” tab that is already present. 
-    * Add properties  height and width in “Size” tab and  display image on page accordingly. 
+2. Create component Important links. Author can add a title and a list of important links. Author can add as many links as he wants. If the link added by author is internal link, we need to add “HTML” extension to the link but if the link is external link(i.e. Outside of AEM) do not add the extension. Also For each link authoring, he gets the following fields: 1. Title  2. link 3. an dropdown to select whether the link should open in new tab or same tab.
+Note: Read Resource resolver API and Resource API to cheeck if a link is AEM internal link or external.
 
-3. Create a new component name Logo and extend only it’s dialog from /apps/core/wcm/components/image. 
-    * The component should have two tabs: 1. Select Logo 2. Logo Information
-    * Logo Information tab should have only Alternative text and Link as fields.
-    * Display Logo on the page accordingly.
+ 
 
-**Note: No need to add extra fields or tab. Develop this component by using resourceMerger properties only.**
+3. Use list component of /libs/wcm/foundation/components/list , using extending and concept of resource merger. create  your own component and make following changes
 
-4. Apply dialog validations making field1 as required and field2 should have atleast 6 characters , otherwise throw an error “ field2 should have atleast 6 characters” .(not required)
+    - Move tab Accessibility before settings tab
 
+    - In settings tab , there is a property called “paginate after”, change the min property for this field from 0 to 2
+
+    - Make this “paginate after” property to appear as second last property in settings tab
+
+    - Remove “Description for  "Previous"” property from Accessibility tab
+
+    - Add one new propery to setting tab to add title to list component
 
 
 #### Note
-- Custom components are under ComponentDay2/components/custom
+* Custom components created(or extended) for the above are 'custom-list' and 'important-links'. Both of these belong to the componentGroup - 'customComponents' and are present under:
+```ComponentDay2/ui.apps/src/main/content/jcr_root/apps/ComponentDay2/components/custom```
+
+* Java logic handling URL for question2 is written inside URLHandler.java inside 
+```core/models/```
+
+
+
+
+
+
+
