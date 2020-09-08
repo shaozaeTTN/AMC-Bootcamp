@@ -1,6 +1,6 @@
 {
   "scanSettings": {
-    "baseBranches": []
+    "baseBranches": ["Clientlib","AEM_Exercise"]
   },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
